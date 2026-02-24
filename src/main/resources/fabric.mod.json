@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "triggerbot",
+  "version": "${version}",
+  "name": "TriggerBot",
+  "description": "Auto-click when crosshair is on an entity",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.triggerbot.TriggerBotMod"
+    ]
+  },
+  "mixins": [
+    "triggerbot.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
